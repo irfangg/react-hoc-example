@@ -6,7 +6,7 @@ const CarsList = ({ cars, itemsToShow }) => {
       <div className="row">
         <h3>List of Cars</h3>
         <ul>
-          {cars?.slice(0, itemsToShow).map((car, i) => (
+          {cars.map((car, i) => (
             <li key={i}>
               {car.name} - {car.country}
             </li>

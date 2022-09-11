@@ -40,11 +40,11 @@ const Title = ({ onClick }) => <h2 onClick={onClick}>Click me</h2>;
 // 3. Content helper Component
 const Content = () => (
   <div>
-    <ShowMore itemsLength={items.length} itemsLimit={4}>
-      {(itemsToShow) => <CarsList cars={items} itemsToShow={itemsToShow} />}
+    <ShowMore itemsLimit={4} data={items}>
+      {(dataToShow) => <CarsList cars={dataToShow} />}
     </ShowMore>
-    <ShowMore itemsLength={items.length} itemsLimit={3}>
-      {(itemsToShow) => <CarsList cars={items2} itemsToShow={itemsToShow} />}
+    <ShowMore itemsLimit={3} data={items2}>
+      {(dataToShow) => <CarsList cars={dataToShow} />}
     </ShowMore>
   </div>
 );
