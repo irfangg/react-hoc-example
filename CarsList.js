@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-const CarsList = ({ cars, itemsToShow }) => {
+const CarsList = ({ cars }) => {
   return (
     <div className="container">
       <h3>Click show more to see more data</h3>
